@@ -99,13 +99,10 @@
 		9DB262CE2919C62000ECCDE4 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
-				9DB262CF2919C62000ECCDE4 /* AppDelegate.swift */,
-				9DB262D12919C62000ECCDE4 /* SceneDelegate.swift */,
-				9DB262D32919C62000ECCDE4 /* ViewController.swift */,
-				9DB262D52919C62000ECCDE4 /* Main.storyboard */,
-				9DB262D82919C62200ECCDE4 /* Assets.xcassets */,
-				9DB262DA2919C62200ECCDE4 /* LaunchScreen.storyboard */,
-				9DB262DD2919C62200ECCDE4 /* Info.plist */,
+				9DB262FF2919C67800ECCDE4 /* Model */,
+				9DB263012919C68E00ECCDE4 /* View */,
+				9DB263022919C6A300ECCDE4 /* Controller */,
+				9DB263032919C6D800ECCDE4 /* Supporting files */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -125,6 +122,41 @@
 				9DB262F22919C62200ECCDE4 /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		9DB262FF2919C67800ECCDE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DB263012919C68E00ECCDE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DB263022919C6A300ECCDE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DB262D32919C62000ECCDE4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DB263032919C6D800ECCDE4 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				9DB262CF2919C62000ECCDE4 /* AppDelegate.swift */,
+				9DB262D12919C62000ECCDE4 /* SceneDelegate.swift */,
+				9DB262D52919C62000ECCDE4 /* Main.storyboard */,
+				9DB262D82919C62200ECCDE4 /* Assets.xcassets */,
+				9DB262DA2919C62200ECCDE4 /* LaunchScreen.storyboard */,
+				9DB262DD2919C62200ECCDE4 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,7 +471,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FXTZ838HT6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "ToDoApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,7 +502,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FXTZ838HT6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoApp/Info.plist;
+				INFOPLIST_FILE = "ToDoApp/Supporting files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
