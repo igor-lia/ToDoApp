@@ -24,6 +24,7 @@
 		9DE534DD291AA99800FDFC06 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534DC291AA99800FDFC06 /* TaskManager.swift */; };
 		9DE534E0291C028A00FDFC06 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534DF291C028A00FDFC06 /* TaskListViewControllerTests.swift */; };
 		9DE534E2291C104700FDFC06 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534E1291C104700FDFC06 /* DataProvider.swift */; };
+		9DE534E429227CC300FDFC06 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534E329227CC300FDFC06 /* DataProviderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9DE534DC291AA99800FDFC06 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		9DE534DF291C028A00FDFC06 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		9DE534E1291C104700FDFC06 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		9DE534E329227CC300FDFC06 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9DE534DF291C028A00FDFC06 /* TaskListViewControllerTests.swift */,
+				9DE534E329227CC300FDFC06 /* DataProviderTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			files = (
 				9DB263052919C88A00ECCDE4 /* TaskTests.swift in Sources */,
 				9DE534D7291AA4B900FDFC06 /* LocationTests.swift in Sources */,
+				9DE534E429227CC300FDFC06 /* DataProviderTests.swift in Sources */,
 				9DE534DA291AA92000FDFC06 /* TaskManagerTests.swift in Sources */,
 				9DE534E0291C028A00FDFC06 /* TaskListViewControllerTests.swift in Sources */,
 				9DB262E72919C62200ECCDE4 /* ToDoAppTests.swift in Sources */,

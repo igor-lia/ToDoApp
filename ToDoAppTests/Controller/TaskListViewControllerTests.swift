@@ -43,6 +43,7 @@ final class TaskListViewControllerTests: XCTestCase {
     }
     
     func testWhenViewIsLoadedTableViewDelegateEqualsTableViewDataSource() {
-        XCTAssertEqual(sut.tableView.delegate as? DataProvider, sut.tableView.dataSource as? DataProvider)
+        XCTAssertEqual(sut.tableView.delegate as? DataProvider,
+                       sut.tableView.dataSource as? DataProvider)
     }
 }
