@@ -25,6 +25,7 @@
 		9DE534E0291C028A00FDFC06 /* TaskListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534DF291C028A00FDFC06 /* TaskListViewControllerTests.swift */; };
 		9DE534E2291C104700FDFC06 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534E1291C104700FDFC06 /* DataProvider.swift */; };
 		9DE534E429227CC300FDFC06 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534E329227CC300FDFC06 /* DataProviderTests.swift */; };
+		9DE534E6292286F500FDFC06 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE534E5292286F500FDFC06 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9DE534DF291C028A00FDFC06 /* TaskListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewControllerTests.swift; sourceTree = "<group>"; };
 		9DE534E1291C104700FDFC06 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		9DE534E329227CC300FDFC06 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
+		9DE534E5292286F500FDFC06 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		9DB263012919C68E00ECCDE4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DE534E5292286F500FDFC06 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				9DB263082919C93800ECCDE4 /* Task.swift in Sources */,
 				9DB262D42919C62000ECCDE4 /* TaskListViewController.swift in Sources */,
 				9DE534E2291C104700FDFC06 /* DataProvider.swift in Sources */,
+				9DE534E6292286F500FDFC06 /* TaskCell.swift in Sources */,
 				9DE534D5291A948200FDFC06 /* Location.swift in Sources */,
 				9DB262D02919C62000ECCDE4 /* AppDelegate.swift in Sources */,
 				9DB262D22919C62000ECCDE4 /* SceneDelegate.swift in Sources */,
