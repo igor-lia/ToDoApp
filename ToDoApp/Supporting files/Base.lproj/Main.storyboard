@@ -26,7 +26,24 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aHN-p2-dA2" id="guA-xb-2fe">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcV-xf-3C8">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="42" height="21.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kcV-xf-3C8" firstAttribute="top" secondItem="guA-xb-2fe" secondAttribute="topMargin" id="1Ve-9U-lEs"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kcV-xf-3C8" secondAttribute="bottom" id="HM5-O5-HUQ"/>
+                                                <constraint firstItem="kcV-xf-3C8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="guA-xb-2fe" secondAttribute="leadingMargin" id="nyy-S3-XO1"/>
+                                                <constraint firstAttribute="trailing" secondItem="kcV-xf-3C8" secondAttribute="trailing" constant="331" id="o3Y-DB-GUw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="buttonTitle" destination="kcV-xf-3C8" id="VYc-ZN-GpB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

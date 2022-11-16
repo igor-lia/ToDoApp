@@ -62,4 +62,17 @@ extension DataProvider: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        tableView.reloadData()
+        
+        guard let section = Section(rawValue: indexPath.section),
+                let taskManager = taskManager else { fatalError() }
+        
+        switch section {
+        case .todo: taskManager.checkTask(at: indexPath.row)
+        case .done: taskManager.uncheckTask(at: indexPath.row)
+        }
+        
+    }
 }

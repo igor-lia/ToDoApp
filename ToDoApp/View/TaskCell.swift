@@ -8,7 +8,8 @@
 import UIKit
 
 class TaskCell: UITableViewCell {
- 
+    @IBOutlet weak var buttonTitle: UILabel!
+    
     func configure(withTask task: Task) {
         
     }
