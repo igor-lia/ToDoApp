@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D6DEB76292581A9006A6737 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6DEB75292581A9006A6737 /* TaskCellTests.swift */; };
 		9DB262D02919C62000ECCDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB262CF2919C62000ECCDE4 /* AppDelegate.swift */; };
 		9DB262D22919C62000ECCDE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB262D12919C62000ECCDE4 /* SceneDelegate.swift */; };
 		9DB262D42919C62000ECCDE4 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB262D32919C62000ECCDE4 /* TaskListViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D6DEB75292581A9006A6737 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		9DB262CC2919C62000ECCDE4 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB262CF2919C62000ECCDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB262D12919C62000ECCDE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D6DEB7429258192006A6737 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D6DEB75292581A9006A6737 /* TaskCellTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9DB262C32919C62000ECCDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		9DB262E52919C62200ECCDE4 /* ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9D6DEB7429258192006A6737 /* View */,
 				9DE534DE291C026600FDFC06 /* Controller */,
 				9DE534D8291AA8F900FDFC06 /* Manager */,
 				9DB262E62919C62200ECCDE4 /* ToDoAppTests.swift */,
@@ -369,6 +380,7 @@
 			files = (
 				9DB263052919C88A00ECCDE4 /* TaskTests.swift in Sources */,
 				9DE534D7291AA4B900FDFC06 /* LocationTests.swift in Sources */,
+				9D6DEB76292581A9006A6737 /* TaskCellTests.swift in Sources */,
 				9DE534E429227CC300FDFC06 /* DataProviderTests.swift in Sources */,
 				9DE534DA291AA92000FDFC06 /* TaskManagerTests.swift in Sources */,
 				9DE534E0291C028A00FDFC06 /* TaskListViewControllerTests.swift in Sources */,

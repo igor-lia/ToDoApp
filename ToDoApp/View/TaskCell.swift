@@ -8,7 +8,9 @@
 import UIKit
 
 class TaskCell: UITableViewCell {
-    @IBOutlet weak var buttonTitle: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     func configure(withTask task: Task) {
         
