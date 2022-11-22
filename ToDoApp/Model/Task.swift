@@ -10,7 +10,7 @@ import Foundation
 struct Task {
     var title: String
     var description: String?
-    let date: Date?
+    let date: Date
     let location: Location?
     
     init(title: String, description: String? = nil, date: Date? = nil, location: Location? = nil) {

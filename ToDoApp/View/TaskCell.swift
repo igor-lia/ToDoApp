@@ -14,7 +14,7 @@ class TaskCell: UITableViewCell {
     
     private var dateFormatter: DateFormatter {
         let df = DateFormatter()
-        df.dateFormat = "MMM d, yyyy"
+        df.dateFormat = "dd.MM.yy"
         return df
     }
     
@@ -26,11 +26,8 @@ class TaskCell: UITableViewCell {
             dateLabel = nil
             locationLabel = nil
         } else {
-            if let date = task.date {
-                let dateString = dateFormatter.string(from: date)
-                dateLabel.text = dateString
-                
-            }
+            let dateString = dateFormatter.string(from: task.date)
+            dateLabel.text = dateString
             self.titleLabel.text = task.title
             self.locationLabel.text = task.location?.name
         }
