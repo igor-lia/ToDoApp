@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="dDY-B7-Mlr">
-                                                    <rect key="frame" x="20" y="11" width="354" height="20.333333333333336"/>
+                                                    <rect key="frame" x="20" y="11" width="354" height="20.333333333333332"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcV-xf-3C8">
                                                             <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="u0Y-OK-gAP">
-                                <rect key="frame" x="175" y="80" width="41.333333333333343" height="113"/>
+                                <rect key="frame" x="175" y="80" width="41.333333333333343" height="159.33333333333334"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6E-YD-7PP">
                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -114,10 +114,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsi-0D-1bi">
+                                        <rect key="frame" x="0.0" y="139" width="41.333333333333336" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-ot-10Y">
-                                <rect key="frame" x="16" y="218" width="361" height="600"/>
+                                <rect key="frame" x="16" y="265" width="361" height="553"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
@@ -128,6 +134,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="owQ-eI-cdw" id="1Hl-qC-hCE"/>
                         <outlet property="descriptionLabel" destination="oHi-Gg-DX0" id="V16-Ug-K6J"/>
+                        <outlet property="locationLabel" destination="fsi-0D-1bi" id="Erj-EO-WZP"/>
                         <outlet property="mapView" destination="Dik-ot-10Y" id="dLK-sX-8j0"/>
                         <outlet property="titleLabel" destination="n6E-YD-7PP" id="BW5-Mw-dlp"/>
                     </connections>
