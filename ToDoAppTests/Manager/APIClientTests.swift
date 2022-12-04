@@ -36,6 +36,11 @@ final class APIClientTests: XCTestCase {
         userLogin()
         XCTAssertEqual(mockURLSession.urlComponents?.path, "/login")
     }
+    
+    func testLoginUsesExpectedQuery() {
+        userLogin()
+        XCTAssertEqual(mockURLSession.urlComponents?.query, "name=name&password=123456")
+    }
 }
 
 extension APIClientTests {
@@ -44,7 +49,6 @@ extension APIClientTests {
         
         var urlComponents: URLComponents? {
             guard let url = url else {
-                XCTFail()
                 return nil
             }
             return URLComponents(url: url, resolvingAgainstBaseURL: true)
