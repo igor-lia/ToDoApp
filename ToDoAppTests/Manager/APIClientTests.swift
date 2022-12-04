@@ -24,7 +24,7 @@ final class APIClientTests: XCTestCase {
     
     func userLogin() {
         let completionHandler = {(token: String?, error: Error?) in }
-        sut.login(withName: "name", password: "123456", completionHandler: completionHandler)
+        sut.login(withName: "name", password: "%123456", completionHandler: completionHandler)
     }
     
     func testLoginUsesCorrectHost() {
@@ -37,9 +37,19 @@ final class APIClientTests: XCTestCase {
         XCTAssertEqual(mockURLSession.urlComponents?.path, "/login")
     }
     
-    func testLoginUsesExpectedQuery() {
+    func testLoginUsesExpectedQueryParameters() {
         userLogin()
-        XCTAssertEqual(mockURLSession.urlComponents?.query, "name=name&password=123456")
+        
+        guard let queryItems = mockURLSession.urlComponents?.queryItems else {
+            XCTFail()
+            return
+        }
+        
+        let urlQueryItemName = URLQueryItem(name: "name", value: "name")
+        let urlQueryItemPassword = URLQueryItem(name: "password", value: "%123456")
+        
+        XCTAssertTrue(queryItems.contains(urlQueryItemName))
+        XCTAssertTrue(queryItems.contains(urlQueryItemPassword))
     }
 }
 
