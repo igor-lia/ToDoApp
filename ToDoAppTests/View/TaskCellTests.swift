@@ -70,7 +70,7 @@ final class TaskCellTests: XCTestCase {
         cell.configure(withTask: task)
         
         let df = DateFormatter()
-        df.dateFormat = "MMM d, yyyy"
+        df.dateFormat = "dd.MM.yy"
         let date = task.date
         let dateString = df.string(from: date)
         

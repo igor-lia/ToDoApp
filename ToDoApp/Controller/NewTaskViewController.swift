@@ -10,16 +10,16 @@ import CoreLocation
 
 class NewTaskViewController: UIViewController {
     
-    var taskManager: TaskManager!
+    var taskManager =  TaskManager()
     var geocoder = CLGeocoder()
     
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var addressTextField: UITextField!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var locationTextField: UITextField!
+    @IBOutlet var dateTextField: UITextField!
+    @IBOutlet var descriptionTextField: UITextField!
+    @IBOutlet var addressTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
+    @IBOutlet var cancelButton: UIButton!
     
     @IBAction func save() {
         let titleString = titleTextField.text
@@ -27,6 +27,7 @@ class NewTaskViewController: UIViewController {
         let date = dateFormatter.date(from: dateTextField.text!)
         let descriptionString = descriptionTextField.text
         let addressString = addressTextField.text
+        
         geocoder.geocodeAddressString(addressString!) { [unowned self] placemarks, error in
             let placemark = placemarks?.first
             let coordinate = placemark?.location?.coordinate
@@ -34,6 +35,7 @@ class NewTaskViewController: UIViewController {
             let task = Task(title: titleString!, description: descriptionString, date: date, location: location)
             self.taskManager.add(task: task)
         }
+        dismiss(animated: true)
     }
     
     var dateFormatter: DateFormatter {

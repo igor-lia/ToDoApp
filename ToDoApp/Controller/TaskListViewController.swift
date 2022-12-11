@@ -14,7 +14,7 @@ class TaskListViewController: UIViewController {
     
     @IBAction func addNewTask(_ sender: UIBarButtonItem) {
         if let viewController = storyboard?.instantiateViewController(withIdentifier: String(describing: NewTaskViewController.self)) as? NewTaskViewController {
-            viewController.taskManager = dataProvider.taskManager
+            viewController.taskManager = dataProvider.taskManager!
             present(viewController, animated: true)
         } 
     }
