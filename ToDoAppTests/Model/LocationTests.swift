@@ -11,11 +11,11 @@ import CoreLocation
 
 
 final class LocationTests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
@@ -34,5 +34,17 @@ final class LocationTests: XCTestCase {
         XCTAssertEqual(location.coordinate?.latitude, coordinate.latitude)
         XCTAssertEqual(location.coordinate?.longitude, coordinate.longitude)
     }
-
+    
+    func testCanBeCreatedFromPlistDictionary() {
+        let location = Location(name: "Hello", coordinate: CLLocationCoordinate2D(latitude: 49.85910026206016, longitude: 24.01840198787776))
+        
+        let dict: [String : Any] = ["name" : "Hello",
+                                    "latitude" : "49.85910026206016",
+                                    "longitude" : "24.01840198787776"]
+        
+        let createdLocation = Location(dict: dict)
+        
+        XCTAssertEqual(location, createdLocation)
+    }
+    
 }
