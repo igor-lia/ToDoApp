@@ -31,8 +31,7 @@ final class DataProviderTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        sut = nil
-        tableView = nil
+        sut.taskManager?.removeAll()
         try super.tearDownWithError()
     }
 
